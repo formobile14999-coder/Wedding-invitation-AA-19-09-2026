@@ -171,7 +171,7 @@
             font-size: 3.4rem;
             line-height: 1.1;
             margin: 10px 0;
-            color: #403B37;
+            color: #693804;
         }
 
         .f-gothic {
@@ -314,7 +314,7 @@
             position: absolute;
             left: 33px;
             top: 26px;
-            color: #403B37;
+            color: #693804;
             z-index: 2;
         }
 
@@ -380,7 +380,7 @@
             font-family: 'Ceremonious One', cursive;
             font-size: 3.9rem;
             line-height: 1;
-            color: #403B37;
+            color: #693804;
             display: block;
         }
 
@@ -634,6 +634,23 @@
             margin: 15px 0;
         }
 
+        .color-dot-row {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            gap: 8px;
+            width: 100%;
+            margin: 15px 0;
+        }
+
+        .color-dot-circle {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            border: 1px solid rgba(255,255,255,0.6);
+            flex-shrink: 0;
+        }
+
         .icon-heart-img {
             width: 65px;
             height: auto;
@@ -684,15 +701,15 @@
 
         <!-- БЛОК 2 -->
         <div class="glass-block">
-            <div class="f-cormorant fade-word" style="font-size: 1.2rem; letter-spacing: 0.2em; animation-delay: 0s;">ПРИГЛАШЕНИЕ НА СВАДЬБУ</div>
+            <div class="f-cormorant fade-word" style="font-size: 1.2rem; letter-spacing: 0.2em; animation-delay: 0s; color: #693804;">ПРИГЛАШЕНИЕ НА СВАДЬБУ</div>
             
             <div class="f-cormorant names-3-rows">
-    <span class="fade-word-denis" style="animation-delay: 0.15s;">Артём</span>
+    <span class="fade-word-denis" style="animation-delay: 0.15s; color: #693804;">Артём</span>
     <span class="fade-word" style="animation-delay: 0.3s;">&</span>
-    <span class="fade-word-elena" style="animation-delay: 0.45s;">Анна</span>
+    <span class="fade-word-elena" style="animation-delay: 0.45s; color: #693804;">Анна</span>
 </div>
             
-            <div class="date-3-rows f-cormorant">
+            <div class="date-3-rows f-cormorant" style="color: #693804;">
                 <div class="fade-word" style="animation-delay: 0.6s;">19</div>
                 <div class="date-day-large fade-word" style="animation-delay: 0.8s;">СЕНТЯБРЯ</div>
                 <div class="fade-word" style="animation-delay: 0.9s;">2026</div>
@@ -706,18 +723,23 @@
 
         <!-- БЛОК 3 -->
         <div class="glass-block">
-            <div class="photo-container photo-large">
-                <img src="photo13.jpeg" alt="" class="photo-img">
+            <div class="collage-container">
+                <div class="collage-img-box box-1">
+                    <img src="Photo2.jpeg" alt="" class="photo-img">
+                </div>
+                <div class="collage-img-box box-2">
+                    <img src="Photo3.jpeg" alt="" class="photo-img">
+                </div>
             </div>
             <div class="f-cormorant title-large" style="font-size: 2rem; margin-top: 10px;">РОДНЫЕ И БЛИЗКИЕ!</div>
-            <div class="f-ceremonious">Эти детки решили пожениться</div>
+            <div class="f-ceremonious" style="line-height: 0.73;">Эти детки решили пожениться</div>
         </div>
 
-        <!-- Наложение инициалов ДЕ -->
+        <!-- Наложение инициалов АА -->
         <div class="initials-divider">
             <div class="initials-box">
-                <span class="char-d">Д</span>
-                <span class="char-e">Е</span>
+                <span class="char-d">А</span>
+                <span class="char-e">А</span>
             </div>
         </div>
 
@@ -741,7 +763,7 @@
             </div>
 
             <p class="f-gothic" style="font-size: 0.85rem; opacity: 0.8;">Адрес: ул. Северный пр-т, 108, Находка</p>
-            <a href="https://yandex.ru/maps/?text=Северный+проспект,+108,+Находка " target="_blank" class="btn">На карте в Яндекс.Картах</a>
+            <a href="https://yandex.ru/maps/?text=Северный+проспект,+108,+Находка" target="_blank" class="btn">На карте в Яндекс.Картах</a>
         </div>
 
         <!-- БЛОК 6 -->
@@ -781,11 +803,11 @@
             </div>
         </div>
 
-        <!-- Наложение инициалов ДЕ -->
+        <!-- Наложение инициалов АА -->
         <div class="initials-divider">
             <div class="initials-box">
-                <span class="char-d">Д</span>
-                <span class="char-e">Е</span>
+                <span class="char-d">А</span>
+                <span class="char-e">А</span>
             </div>
         </div>
 
@@ -800,37 +822,44 @@
                 Мы очень ждём и готовимся к нашему незабываемому дню! Чтобы воспоминания о свадьбы были положительными, а фотографии уникальными, мы просим Вас поддержать цветовую палитру нашей свадьбы.
             </p>
 
-            <div class="color-dot"></div>
+            <div class="color-dot-row">
+                <div class="color-dot-circle" style="background: #341F1C;"></div>
+                <div class="color-dot-circle" style="background: #472718;"></div>
+                <div class="color-dot-circle" style="background: #6D3A25;"></div>
+                <div class="color-dot-circle" style="background: #A46C47;"></div>
+                <div class="color-dot-circle" style="background: #A46C47;"></div>
+                <div class="color-dot-circle" style="background: #FFE9DE;"></div>
+            </div>
 
             <div class="f-cormorant" style="font-size: 0.9rem; letter-spacing: 0.1em; width: 100%; text-align: left; margin-top: 15px;">ЖЕНСКИЕ ОБРАЗЫ</div>
             <div class="collage-container-4">
                 <div class="collage-img-box box-q1">
-                    <img src="photo16.jpeg" alt="" class="photo-img">
+                    <img src="Photo4.jpeg" alt="" class="photo-img">
                 </div>
                 <div class="collage-img-box box-q2">
-                    <img src="photo17.jpeg" alt="" class="photo-img">
+                    <img src="Photo5.jpeg" alt="" class="photo-img">
                 </div>
                 <div class="collage-img-box box-q3">
-                    <img src="photo18.jpeg" alt="" class="photo-img">
+                    <img src="Photo5.jpeg" alt="" class="photo-img">
                 </div>
                 <div class="collage-img-box box-q4">
-                    <img src="photo19.jpeg" alt="" class="photo-img">
+                    <img src="Photo7.jpeg" alt="" class="photo-img">
                 </div>
             </div>
 
             <div class="f-cormorant" style="font-size: 0.9rem; letter-spacing: 0.1em; width: 100%; text-align: right; margin-top: 15px;">МУЖСКИЕ ОБРАЗЫ</div>
             <div class="collage-container-4">
                 <div class="collage-img-box box-q1">
-                    <img src="photo20.jpeg" alt="" class="photo-img">
+                    <img src="Photo9.jpeg" alt="" class="photo-img">
                 </div>
                 <div class="collage-img-box box-q2">
-                    <img src="photo21.jpeg" alt="" class="photo-img">
+                    <img src="Photo10.jpeg" alt="" class="photo-img">
                 </div>
                 <div class="collage-img-box box-q3">
-                    <img src="photo22.jpeg" alt="" class="photo-img">
+                    <img src="Photo11.jpeg" alt="" class="photo-img">
                 </div>
                 <div class="collage-img-box box-q4">
-                    <img src="photo23.jpeg" alt="" class="photo-img">
+                    <img src="Photo12.jpeg" alt="" class="photo-img">
                 </div>
             </div>
         </div>
@@ -839,11 +868,6 @@
         <div class="glass-block auto-height" style="text-align: center;">
             <div class="f-ceremonious">Подсказка</div>
             
-            <div style="margin-bottom: 25px;">
-                <!-- Заголовки посередине по новой фразе -->
-                <div class="f-cormorant" style="font-size: 1.2rem; font-weight: bold; margin-bottom: 12px; text-align: center; line-height: 1.4;">
-                    МЫ РЕШИЛИ<br>СОБРАТЬ ИНФОРМАЦИЮ – ОТВЕТЫ НА САМЫЕ ПОПУЛЯРНЫЕ ВОПРОСЫ
-                </div>
             </div>
 
             <div style="margin-bottom: 20px;">
@@ -854,13 +878,14 @@
             <div style="margin-bottom: 20px;">
                 <div class="f-cormorant" style="font-size: 1.1rem; font-weight: bold; margin-bottom: 5px; text-align: center;">ЧАТ ДЛЯ ГОСТЕЙ</div>
                 <p class="f-gothic" style="font-size: 0.9rem; opacity: 0.85;">Присоединяйтесь к нашему чату в WhatsApp с важной информацией и делитесь своими фото и видео со свадьбы.</p>
+                <a href="https://chat.whatsapp.com/CHoV2p8L82j6VF5k4vR3kA?s=hd&amp;p=i&amp;ilr=4&amp;amv=0" target="_blank" class="btn">ПРИСОЕДИНИТСЯ К ЧАТУ</a>
             </div>
 
         </div>
 
         <!-- БЛОК 9 -->
         <div class="glass-block auto-height photo-full-block">
-            <img src="photo29.jpeg" alt="" class="photo-bg-full">
+            <img src="Photo1.jpeg" alt="" class="photo-bg-full">
 
             <div class="photo-overlay-bottom">
                 <div class="f-gothic" style="font-size: 1.1rem; font-weight: bold; margin-top: 0;">Мы станем семьей через:</div>
@@ -929,7 +954,7 @@
     </div>
 
     <script>
-        const RSVP_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyqcrVrr27WamwL_Ik_dKcBBF4nIsn_pa_V2LxpzrpwUOZTaYpQ2RqsHraMT5kfGp86/exec";
+        const RSVP_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxQatBUivVeo5VSPsw5-prJlpaAv2X1cVC2krZi0ZhOOrMlOLXZFmRr3gRT0a_OoiAHeA/exec";
 
         function submitRSVP(event) {
             event.preventDefault();
@@ -1012,7 +1037,7 @@
                 observer.observe(block);
             });
 
-            const targetDate = new Date("August 20, 2026 18:00:00").getTime();
+            const targetDate = new Date("September 19, 2026 18:00:00").getTime();
 
             const timerInterval = setInterval(function() {
                 const now = new Date().getTime();
