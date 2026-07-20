@@ -417,6 +417,12 @@
         .collage-img-box .photo-img {
             object-position: top center;
         }
+
+        .collage-img-box.photo-fit .photo-img {
+            object-fit: contain;
+            object-position: center center;
+            background: rgba(0,0,0,0.12);
+        }
         
         .box-1 { width: 55%; height: 140px; left: 0; top: 10px; z-index: 2; }
         .box-2 { width: 50%; height: 130px; right: 0; top: 40px; z-index: 1; }
@@ -660,7 +666,7 @@
         .color-dot-row {
             display: flex;
             flex-wrap: nowrap;
-            justify-content: flex-start;
+            justify-content: center;
             gap: 18px;
             width: 100%;
             margin: 15px 0;
@@ -856,16 +862,16 @@
 
             <div class="f-cormorant" style="font-size: 0.9rem; letter-spacing: 0.1em; width: 100%; text-align: left; margin-top: 15px;">ЖЕНСКИЕ ОБРАЗЫ</div>
             <div class="collage-container-4">
-                <div class="collage-img-box box-q1">
+                <div class="collage-img-box photo-fit box-q1">
                     <img src="Photo4.jpeg" alt="" class="photo-img">
                 </div>
-                <div class="collage-img-box box-q2">
+                <div class="collage-img-box photo-fit box-q2">
                     <img src="Photo5.jpeg" alt="" class="photo-img">
                 </div>
-                <div class="collage-img-box box-q3">
-                    <img src="Photo5.jpeg" alt="" class="photo-img">
+                <div class="collage-img-box photo-fit box-q3">
+                    <img src="Photo6.jpeg" alt="" class="photo-img">
                 </div>
-                <div class="collage-img-box box-q4">
+                <div class="collage-img-box photo-fit box-q4">
                     <img src="Photo7.jpeg" alt="" class="photo-img">
                 </div>
             </div>
@@ -875,10 +881,10 @@
                 <div class="collage-img-box box-q1">
                     <img src="Photo9.jpeg" alt="" class="photo-img">
                 </div>
-                <div class="collage-img-box box-q2">
+                <div class="collage-img-box photo-fit box-q2">
                     <img src="Photo10.jpeg" alt="" class="photo-img">
                 </div>
-                <div class="collage-img-box box-q3">
+                <div class="collage-img-box photo-fit box-q3">
                     <img src="Photo11.jpeg" alt="" class="photo-img">
                 </div>
                 <div class="collage-img-box box-q4">
